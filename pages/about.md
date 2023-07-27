@@ -38,10 +38,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet est placerat in. Et leo duis ut diam quam nulla. Et egestas quis ipsum suspendisse ultrices gravida dictum. Fringilla urna porttitor rhoncus dolor purus non enim praesent. Non diam phasellus vestibulum lorem sed. Tortor dignissim convallis aenean et. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Urna duis convallis convallis tellus id interdum velit laoreet id. Etiam non quam lacus suspendisse. Magna sit amet purus gravida quis. Tempus egestas sed sed risus pretium quam. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Sit amet massa vitae tortor condimentum lacinia.
 
 
-## Technical Specs & Credits
-
-The GMEMS site was built by Cynthia Heider (Public Digital Scholarship Librarian) and [Cassandra Hradil (Digital Humanities Specialist)](https://www.library.upenn.edu/staff/cassandra-hradil), staff associated with Penn Libraries' [Research Data and Digital Scholarship team](https://www.library.upenn.edu/rdds).
-
-This site is generated using [CollectionBuilder-Sheets](https://github.com/CollectionBuilder/collectionbuilder-sheets), an experimental template that directly parses CSVs to create small digital collection exhibits on GitHub Pages designed for teaching digital library skills. Using CB-Sheets, it is possible to use a Google Sheets spreadsheet for your collection metadata, allowing you to see the outcome of metadata edits update immediately.
-
-The site's documentation, files, and codebase can be found in its [GitHub repository](https://github.com/upenndigitalscholarship/gmems-diglib).
