@@ -40,6 +40,7 @@ The translation document should include, in this order:
 1. __Title__
 
 This should be your English translation of the original document title, or an appropriate English title that summarizes the content of an untitled document.
+
 2. __Full document citation__
 
 - Original author (or “Anonymous”)
@@ -47,9 +48,9 @@ This should be your English translation of the original document title, or an ap
 - Date and location of production/publication 
 - Location: full archive or publication citation of copy/edition used. Use full names for first instance of a given institution, though sigla may be abbreviated:
 
-- - Florence, Biblioteca Nazionale Centrale (= Bibl. Naz.) (e.g., Florence, Biblioteca
+    - Florence, Biblioteca Nazionale Centrale (= Bibl. Naz.) (e.g., Florence, Biblioteca
 Nazionale Centrale, MS Magl. [Magliabechiano] 165, fol. 2r)
-- - London, British Library (e.g., London, British Library, MS Add. 19587)
+    - London, British Library (e.g., London, British Library, MS Add. 19587)
 Paris, Bibliothèque nationale de France (= Bib. nat.); Bib. nat. MS Lat. 6064; MS
 Arabe 384
 - Please use Chicago Style for published editions: [http://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-1.html](http://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-1.html)
@@ -84,7 +85,6 @@ You may include footnotes to provide extra information on specific parts of the 
 8. __Original text__
 
 Transcribe the original text. You may indicate the expansion of abbreviations using square brackets. Punctuation and capitalizations may be modernized silently.
- 
  
 __General formatting guidelines:__
 
