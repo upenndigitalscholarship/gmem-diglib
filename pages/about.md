@@ -47,9 +47,9 @@ This should be your English translation of the original document title, or an ap
 - Date and location of production/publication 
 - Location: full archive or publication citation of copy/edition used. Use full names for first instance of a given institution, though sigla may be abbreviated:
 
--- Florence, Biblioteca Nazionale Centrale (= Bibl. Naz.) (e.g., Florence, Biblioteca
+- - Florence, Biblioteca Nazionale Centrale (= Bibl. Naz.) (e.g., Florence, Biblioteca
 Nazionale Centrale, MS Magl. [Magliabechiano] 165, fol. 2r)
--- London, British Library (e.g., London, British Library, MS Add. 19587)
+- - London, British Library (e.g., London, British Library, MS Add. 19587)
 Paris, Bibliothèque nationale de France (= Bib. nat.); Bib. nat. MS Lat. 6064; MS
 Arabe 384
 - Please use Chicago Style for published editions: [http://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-1.html](http://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-1.html)
