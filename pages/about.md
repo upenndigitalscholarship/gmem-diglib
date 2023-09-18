@@ -7,7 +7,7 @@ credits: true
 # Edit the markdown in this file to describe your collection
 # Look in _includes/feature for options to easily add features to the page
 ---
-## About the Global Medievel and Early Modern Digital Library (GMEMS)
+## About the Global Medieval and Early Modern Digital Library
 
 The Global Medieval and Early Modern Digital Library provides a platform for publishing original translations of primary sources that have not been previously translated into English, covering a broad range of regions, languages, traditions, and genres from the period between 500 and 1700. A core part of our mission is a deep commitment to interdisciplinarity and intellectual exchange among scholars working across different languages and cultures of the medieval and early modern periods, as well as the promotion of our field and making it more accessible to non-specialists. We hope that this open access resource will help the users to discover the hitherto unnoticed connections between diverse civilizations and religions and to appreciate the global aspects of these formative periods in world history.
 
