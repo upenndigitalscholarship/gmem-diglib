@@ -17,6 +17,14 @@ function displayItem(record, prev_id, next_id) {
             var objectSrc = "{{ '/objects/' | relative_url }}" + record.filename; 
         }
     }
+    //check for pdf url
+    if(record.pdf_url) { 
+        if (record.pdf_url.includes("/")) { 
+            var objectSrc = record.pdf_url; 
+        } else { 
+            var objectSrc = "{{ '/objects/' | relative_url }}" + record.filename; 
+        }
+    }
     var itemImage, itemLink;
 
     if (format.includes('image')) {
@@ -72,20 +80,61 @@ function displayItem(record, prev_id, next_id) {
     var fields = '<dl>';
     {% for f in fields %}{% if f.browse_link == "true" %}
     if (record[{{ f.field | jsonify }}]) {
+     
         var topics = record[{{ f.field | jsonify }}].split(';');
         var browseLinks = "";
         for (var i = 0, len = topics.length; i < len; i++) {
             if (topics[i] != "") {
-                browseLinks += '<a class="btn btn-link" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(topics[i].trim()) + '">' + topics[i].trim() + '</a> ';
+                browseLinks += '<a class="btn btn-primary" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(topics[i].trim()) + '">' + topics[i].trim() + '</a> ';
             }
         }
         fields += '<dt class="field">{{ f.display_name }}:</dt> <dd class="field-value">' + browseLinks + '</dd>';
     }
+    
     {%- else -%}
-    if (record[{{ f.field | jsonify }}]) { fields += '<dt class="field">{{ f.display_name }}:</dt> <dd class="field-value">{% if f.external_link == "true" %}<a href="' + record[{{ f.field | jsonify }}] + '" target="_blank">' + record[{{ f.field | jsonify }}] + '</a>{% else %}' + record[{{ f.field | jsonify }}] + '{% endif %}</dd>'; }
-    {% endif %}{% endfor %}
+        if ({{ f.field | jsonify }}=="introduction") {
+            console.log({{ f.field | jsonify }});
+            fields += '<dt class="field">{{ f.display_name }}:</dt> <dd class="field-value"><pre class="introduction-text">'+ record[{{ f.field | jsonify }}] + '</pre></dd>'; }
+        
+
+        else if ({{ f.field | jsonify }}=="source") {
+            console.log({{ f.field | jsonify }});
+            fields += '<dt class="field">{{ f.display_name }}:</dt> <dd class="field-value"><a href="' + record[{{ f.field | jsonify }}] + '">'+record[{{ f.field | jsonify }}]+'</a></dd>'; }
+    else if (record[{{ f.field | jsonify }}]) {
+        console.log({{ f.field | jsonify }});
+         fields += '<dt class="field">{{ f.display_name }}:</dt> <dd class="field-value">{% if f.external_link == "true" %}<a href="' + record[{{ f.field | jsonify }}] + '" target="_blank">' + record[{{ f.field | jsonify }}] + '</a>{% else %}' + record[{{ f.field | jsonify }}] + '{% endif %}</dd>'; }
+    {% endif %}
+    
+    {% endfor %}
     fields += '</dl>';
     document.getElementById("item-metadata").innerHTML = fields;
+
+    /* add the original + translated text from the data to the correct divs */
+
+    document.getElementById("original-text").innerHTML = record.orig_text;
+    document.getElementById("translated-text").innerHTML = record.trans_text;
+
+/* listen for textbox class and apply css formatting to original + translated text divs */
+
+window.addEventListener("load", function () {
+    var codes = document.getElementsByClassName("textbox");
+    for (var i = 0; i < codes.length; i++) {
+        lineToSpan(codes[i]);
+    }
+  }, false);
+  function lineToSpan (code) {
+    var lines = code.innerHTML.split("\n");
+    while(code.childNodes.length > 0) {
+        code.removeChild(code.childNodes[0]);
+    }
+    for(var i = 0; i < lines.length; i++) {
+        var span = document.createElement("span");
+        span.className = "line";
+        span.innerHTML = lines[i];
+        code.appendChild(span);
+        code.appendChild(document.createTextNode("\n"));
+    }
+  };
 
     {% if site.data.theme.browse-buttons == true %}
     if (prev_id) {
@@ -114,31 +163,31 @@ function displayItem(record, prev_id, next_id) {
     {%- endif -%}
 }
 
-/* function to init page after loading cb_items */
-var itemPageInit = function (cb_items) {
+/* function to init page after loading items */
+function pageInit(items) {
 
     /* get query id from URL */
     var queryString = window.location.search.substring(1).split("=")[1];
     /* find related item by objectid */
-    var record_index = cb_items.findIndex(item => item.objectid == queryString); 
+    var record_index = items.findIndex(item => item.objectid == queryString); 
 
     // display if item exists
     if (record_index != -1) {
         {% if site.data.theme.browse-buttons == true %}
         // find next and previous record
-        var last = cb_items.length - 1;
+        var last = items.length - 1;
         var prev_id, next_id;
         if (record_index === 0) {
-            prev_id = cb_items[last].objectid;
+            prev_id = items[last].objectid;
         } else { 
-            prev_id = cb_items[record_index - 1].objectid;
+            prev_id = items[record_index - 1].objectid;
         }
         if (record_index === last) {
-            next_id = cb_items[0].objectid;
+            next_id = items[0].objectid;
         } else {
-            next_id = cb_items[record_index + 1].objectid;
+            next_id = items[record_index + 1].objectid;
         }{% endif %}
-        displayItem(cb_items[record_index], prev_id, next_id);
+        displayItem(items[record_index], prev_id, next_id);
     } else {
         /* no item with that ID */
         document.getElementById("bc-title").innerHTML = 'Not found?';
@@ -148,7 +197,6 @@ var itemPageInit = function (cb_items) {
     document.getElementById("loading").style.display = "none";
 }
 
-// add feature function to includeFunctions array
-includeFunctions.push(itemPageInit);
+{% include js/cb-items.js %}
 
 </script>
