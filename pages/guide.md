@@ -14,12 +14,12 @@ We encourage submissions from specialists and beginning scholars alike. In order
 ### Formatting Guidelines
 [You may also see the template example for guidance]
 The translation document should include, in this order: 
+
 1. __Title__
 
-This should be your English translation of the original document title, or an appropriate English title that summarizes the content of an untitled document. This should be bold, 14pt. type.
+    This should be your English translation of the original document title, or an appropriate English title that summarizes the content of an untitled document. This should be bold, 14pt. type.
 
 2. __Full document citation__
-
 - Original author (or “Anonymous”)
 - Original language title, if known; alternatively, provide the title given by the holding library/archive or printed collection
 - Date and location of production/publication 
@@ -28,34 +28,34 @@ This should be your English translation of the original document title, or an ap
   - London, British Library (e.g., London, British Library, MS Add. 19587) Paris, Bibliothèque nationale de France (= Bib. nat.); Bib. nat. MS Lat. 6064; MS Arabe 384
 - Please use Chicago Style for published editions: [http://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-1.html](http://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-1.html)
 
-Examples:
-Taddeo Alderotti, Liber ettichor[um] Aristottelis in vulgari (Italy, 1456). UPenn Ms. Codex 243.
-Ouyang Xiu, “《新五代史》卷七十二《四夷附錄》第一 (Facscile 72)” in New History of the Five Dynasties (New York : Columbia University Press, 2004), pp. 302-333.
+    Examples:
+    - Taddeo Alderotti, Liber ettichor[um] Aristottelis in vulgari (Italy, 1456). UPenn Ms. Codex 243.
+    - Ouyang Xiu, “《新五代史》卷七十二《四夷附錄》第一 (Facscile 72)” in New History of the Five Dynasties (New York : Columbia University Press, 2004), pp. 302-333.
  
-3. __Name of translator and academic affiliation__
+3. __Name of translator and academic affiliation__  
 
-i.e. Translator: Eleanor Webb, Department of History, University of Pennsylvania 
+   i.e. Translator: Eleanor Webb, Department of History, University of Pennsylvania 
 
 4. __Introduction__
 
-A general introduction that provides an overview of the contents of the text, its historical context, any significant textual history, any important details about the particular manuscript/edition you have consulted, and the significance of the text for scholars and students. _500 words max_.
+    A general introduction that provides an overview of the contents of the text, its historical context, any significant textual history, any important details about the particular manuscript/edition you have consulted, and the significance of the text for scholars and students. _500 words max_.
 
 5. __Language__ 
 
-State the original language of the text.
+    State the original language of the text.
  
 6. __Keywords__
 
-Provide at least 3 keywords, to be used as tags. 
-i.e. “Chinese History, Frontier History, Daily Life, Recipes, Food.” 
+    Provide at least 3 keywords, to be used as tags. 
+    i.e. “Chinese History, Frontier History, Daily Life, Recipes, Food.” 
 
 7. __Translation__
 
-You may include footnotes to provide extra information on specific parts of the text. Please limit these in length.
+    You may include footnotes to provide extra information on specific parts of the text. Please limit these in length.
  
 8. __Original text__
 
-Transcribe the original text. You may indicate the expansion of abbreviations using square brackets. Your transcription should otherwise be as close to the original source as possible.
+    Transcribe the original text. You may indicate the expansion of abbreviations using square brackets. Your transcription should otherwise be as close to the original source as possible.
  
  
 #### General formatting guidelines
