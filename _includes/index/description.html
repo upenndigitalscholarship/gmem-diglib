@@ -1,8 +1,23 @@
 <div class="card mb-3">
   <div class="card-body">
-    <h5 class="card-title">Description</h5>
+    <h4 class="card-title">About</h4>
     <p class="card-text">{{ site.description }}</p>
     {%- assign about = site.data.config-nav | where: "stub","/about.html" | size -%}
     {% if about > 0 %}<a class="btn btn-outline-primary" href="{{ '/about.html' | relative_url }}" >Learn More &raquo;</a>{% endif %}
+    {%- assign guide = site.data.config-nav | where: "stub","/guide.html" | size -%}
+    {% if about > 0 %}<a class="btn btn-outline-primary" href="{{ '/guide.html' | relative_url }}" >How to Contribute &raquo;</a>{% endif %}
+    <p class="card-text">
+      <h3>GMEM Digital Library Managing Team</h3>
+        <ul>
+          <li><strong>Eleanor Webb</strong> is a PhD Candidate in History at the University of Pennsylvania. Her research focuses on intellectual communities in early modern Italy. Her dissertation project studies relationship between 16th century Italian universities and learned academies. She has been Graduate Fellow in GMRS since 2021.</li> 
+          <li><strong>Brooke Giddon</strong> is a Senior in the College studying Cultural and Linguistic Anthropology with minors in GMRS, French & Francophone Studies, and English. She joined the GMRS team as Undergraduate Fellow in 2023.</li>
+          <li><strong>Professor Julia Verkholantsev</strong> is Associate Professor of Russian and East European Studies at the University of Pennsylvania. She is the founder and director of the program in Global Medieval and Renaissance Studies. She is a co-founder of the GMEM Digital Library, together with Eleanor Webb and Vito Acosta.</li>
+        </ul>
+      <h3>Past Contributors</h3>
+        <ul>  
+          <li><strong>Vito Acosta</strong> was inaugural undergraduate fellow in Global Medieval & Renaissance Studies at the University of Pennsylvania, and was co-founder of the GMEM Digital Library. He earned graduate and undergraduate degrees in East Asian Languages & Civilizations in 2022.</li>
+        </ul>
+    </p>
+    {% if page.credits == true %}{% include cb/credits.html %}{% endif %}
   </div>
 </div>
