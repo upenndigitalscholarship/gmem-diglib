@@ -28,9 +28,9 @@ function makeCard(obj) {
     } else if (obj.format.includes("video")) {
       thumbSrc = '{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-video }}.svg';  
     } else if (obj.format.includes("pdf")) {
-      thumbSrc = '{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-pdf }}.svg';
+      thumbSrc = '{{ "/assets/lib/icons/file-earmark-pdf.svg" }}';
     } else {
-      thumbSrc = '{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-default }}.svg';
+      thumbSrc = '{{ "/assets/lib/icons/file-earmark-text.svg" }}';
     }  
     // start card
     var card = '<div class="item col-lg-4 col-md-6 col-sm-12 mb-2"><div class="card">';
