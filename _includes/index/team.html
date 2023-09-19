@@ -2,14 +2,20 @@
   <div class="card-body">
     <h5 class="card-title">GMEM Digital Library Managing Team</h5>
     <p class="card-text">
-      <p><strong>Eleanor Webb</strong>, University of Pennsylvania
-      <p><strong>Brooke Giddon</strong>, University of Pennsylvania
-      <p><strong>Professor Julia Verkholantsev</strong>, University of Pennsylvania
+      <ul>
+        <li><strong>Eleanor Webb</strong>, University of Pennsylvania
+        <li><strong>Brooke Giddon</strong>, University of Pennsylvania
+        <li><strong>Professor Julia Verkholantsev</strong>, University of Pennsylvania
+      </ul>
     <h5>Past Contributors</h5>
-      <p><strong>Vito Acosta</strong>, University of Pennsylvania
+      <ul>
+        <li><strong>Vito Acosta</strong>, University of Pennsylvania
+      </ul>
     <h5>Technical Contributors</h5>
-        <p><strong>Cynthia Heider</strong>, Penn Libraries
-        <p><strong>Cassandra Hradil</strong>, Penn Libraries and Price Lab for Digital Humanities</p>
+      <ul>
+        <li><strong>Cynthia Heider</strong>, Penn Libraries
+        <li><strong>Cassandra Hradil</strong>, Penn Libraries and Price Lab for Digital Humanities
+      </ul>
     </p>
     {%- assign about = site.data.config-nav | where: "stub","/about.html" | size -%}
     {% if about > 0 %}<a class="btn btn-outline-primary" href="{{ '/about.html' | relative_url }}" >Learn More &raquo;</a>{% endif %}
