@@ -2,12 +2,15 @@
   <div class="card-body">
     <h5 class="card-title">About</h5>
     <p class="card-text">{{ site.description }}</p>
-      <div>
-    {%- assign about = site.data.config-nav | where: "stub","/about.html" | size -%}
-    {% if about > 0 %}<a class="btn btn-outline-primary" href="{{ '/about.html' | relative_url }}" >Learn More &raquo;</a>{% endif %}
-
-    {%- assign guide = site.data.config-nav | where: "stub","/guide.html" | size -%}
-    {% if about > 0 %}<a class="btn btn-outline-primary" href="{{ '/guide.html' | relative_url }}" >How to Contribute &raquo;</a>{% endif %}
+    <div class="row">
+      <div class="col">
+        {%- assign browse = site.data.config-nav | where: "stub","/browse.html" | size -%}
+        {% if browse > 0 %}<a class="btn btn-outline-primary" href="{{ '/browse.html' | relative_url }}" >Learn More &raquo;</a>{% endif %}
+      </div>
+      <div class="col">
+        {%- assign guide = site.data.config-nav | where: "stub","/guide.html" | size -%}
+        {% if guide > 0 %}<a class="btn btn-outline-primary" href="{{ '/guide.html' | relative_url }}" >How to Contribute &raquo;</a>{% endif %}
+      </div>
       </div>
   </div>
 </div>
