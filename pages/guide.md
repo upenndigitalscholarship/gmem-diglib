@@ -13,6 +13,10 @@ We encourage submissions from specialists and beginning scholars alike. In order
 
 ### Necessary Documents
 
+- {% include feature/icon.html icon="file-earmark-pdf %} Guide for Contributors {% include feature/button.html text="Download PDF" link="https://drive.google.com/file/d/1AZOHrxYqNJCgfevx3ZqhGUQvlM0M3DKK/view?usp=sharing" color="success" %}
+- Submission Template (PDF)
+- Field or Faculty Specialist Translation Approval Form (PDF)
+
 <div class="col-md-4">
 
 {% include feature/icon.html icon="file-earmark-pdf;file-play;file-earmark" label="Guide for Contributors as a PDF" caption="Guide for Contributors as a PDF" %}{% include feature/button.html text="Download PDF" link="https://collectionbuilder.github.io/" color="success" %}
