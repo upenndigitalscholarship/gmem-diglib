@@ -3,11 +3,11 @@
     <h5 class="card-title">About</h5>
     <p class="card-text">{{ site.description }}</p>
     <div class="row">
-      <div class="col-3">
+      <div class="col-4">
         {%- assign browse = site.data.config-nav | where: "stub","/browse.html" | size -%}
         {% if browse > 0 %}<a class="btn btn-outline-primary" href="{{ '/browse.html' | relative_url }}" >Browse Items &raquo;</a>{% endif %}
       </div>
-      <div class="col-3">
+      <div class="col-6">
         {%- assign guide = site.data.config-nav | where: "stub","/guide.html" | size -%}
         {% if guide > 0 %}<a class="btn btn-outline-primary" href="{{ '/guide.html' | relative_url }}" >How to Contribute &raquo;</a>{% endif %}
       </div>
