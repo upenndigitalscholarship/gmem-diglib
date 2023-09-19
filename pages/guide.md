@@ -12,8 +12,11 @@ The Global Medieval and Early Modern Digital Library provides a platform for pub
 We encourage submissions from specialists and beginning scholars alike. In order to assure the accuracy and quality of the translations, we request that all undergraduate and graduate student translators have the approval form (available on the website) signed by a faculty specialist before submitting their translation to the GMEM Digital Library. If you are unable to find a specialist to provide this approval, let us know and we will assist in doing so. Correctly formatted (see below) and faculty-approved translations should be sent as Word documents to upenngmrs@sas.upenn.edu.
 
 ### Necessary Documents
-{% include feature/icon.html icon="file-earmark-pdf" label="Guide for Contributors as a PDF" caption="Guide for Contributors as a PDF" %}{% include feature/button.html text="Download PDF" link="https://collectionbuilder.github.io/" color="success" %}
 
+<div class="col-md-4">
+
+{% include feature/icon.html icon="file-earmark-pdf;file-play;file-earmark" label="Guide for Contributors as a PDF" caption="Guide for Contributors as a PDF" %}{% include feature/button.html text="Download PDF" link="https://collectionbuilder.github.io/" color="success" %}
+</div>
 
 {% include feature/icon.html icon="file-play" label="Faculty Approval Form" %}
 {% include feature/icon.html icon="file-play" label="Audio file" %}
