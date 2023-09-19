@@ -13,20 +13,13 @@ We encourage submissions from specialists and beginning scholars alike. In order
 
 ### Necessary Documents
 
-- {% include feature/icon.html icon="file-earmark-pdf" %} Guide for Contributors {% include feature/button.html text="Download PDF" link="https://drive.google.com/file/d/1AZOHrxYqNJCgfevx3ZqhGUQvlM0M3DKK/view?usp=sharing" color="success" %}
-- Submission Template (PDF)
-- Field or Faculty Specialist Translation Approval Form (PDF)
+- Guide for Contributors {% include feature/button.html text="Download PDF" link="https://drive.google.com/file/d/1AZOHrxYqNJCgfevx3ZqhGUQvlM0M3DKK/view?usp=sharing" color="success" %}
+- Submission Template  {% include feature/button.html text="Download PDF" link="https://drive.google.com/file/d/1hSKM22_K_KZHWncI8QhYiJVoOljJVJjX/view?usp=sharing" color="success" %}
+- Field or Faculty Specialist Translation Approval Form  {% include feature/button.html text="Download PDF" link="https://drive.google.com/file/d/16-LCSENChBPJI04KAF7wFOQpxQ17G7ON/view?usp=sharing" color="success" %}
 
-<div class="col-md-4">
-
-{% include feature/icon.html icon="file-earmark-pdf;file-play;file-earmark" label="Guide for Contributors as a PDF" caption="Guide for Contributors as a PDF" %}{% include feature/button.html text="Download PDF" link="https://collectionbuilder.github.io/" color="success" %}
-</div>
-
-{% include feature/icon.html icon="file-play" label="Faculty Approval Form" %}
-{% include feature/icon.html icon="file-play" label="Audio file" %}
 
 ### Formatting Guidelines
-[You may also see the template example for guidance]
+See the template example above for guidance.
 The translation document should include, in this order: 
 
 1. __Title__
