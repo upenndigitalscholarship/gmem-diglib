@@ -19,6 +19,7 @@ The translation document should include, in this order:
 This should be your English translation of the original document title, or an appropriate English title that summarizes the content of an untitled document. This should be bold, 14pt. type.
 
 2. __Full document citation__
+
 - Original author (or “Anonymous”)
 - Original language title, if known; alternatively, provide the title given by the holding library/archive or printed collection
 - Date and location of production/publication 
