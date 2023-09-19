@@ -9,12 +9,12 @@
 #
 # url is site domain, full URL to the production location of your collection
 # on GitHub Pages follows the pattern username.github.io
-url: https://upenndigitalscholarship.github.io/gmems-diglib
+url: https://upenndigitalscholarship.github.io/gmem-diglib
 # baseurl is path to location on the domain if necessary e.g. /digital/hjccc
 # on GitHub Pages it is your github repository's name prefixed with a /
-baseurl: /gmems-diglib 
+baseurl: /gmem-diglib 
 # location of code, the full url to your github repository
-source-code: https://github.com/upenndigitalscholarship/gmems-diglib
+source-code: https://github.com/upenndigitalscholarship/gmem-diglib
 
 ##########
 # SITE SETTINGS
