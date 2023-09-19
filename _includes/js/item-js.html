@@ -18,9 +18,9 @@ function displayItem(record, prev_id, next_id) {
         }
     }
     //check for pdf url
-    if(record.pdf_url) { 
-        if (record.pdf_url.includes("/")) { 
-            var objectSrc = record.pdf_url; 
+    if(record.pdf_link) { 
+        if (record.pdf_link.includes("/")) { 
+            var objectSrc = record.pdf_link; 
         } else { 
             var objectSrc = "{{ '/objects/' | relative_url }}" + record.filename; 
         }
