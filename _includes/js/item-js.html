@@ -17,14 +17,14 @@ function displayItem(record, prev_id, next_id) {
             var objectSrc = "{{ '/objects/' | relative_url }}" + record.filename; 
         }
     }
-    /* replaced by pdf include
+   
     if(record.pdf_link) { 
         if (record.pdf_link.includes("/")) { 
             var objectSrc = record.pdf_link; 
         } else { 
             var objectSrc = "{{ '/objects/' | relative_url }}" + record.filename; 
         }
-    }*/
+    }
 
     var itemImage, itemLink;
 
