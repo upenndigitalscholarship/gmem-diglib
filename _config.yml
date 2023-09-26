@@ -41,7 +41,7 @@ highlighter: rouge
 # e.g. on GitHub use the raw link "https://raw.githubusercontent.com/CollectionBuilder/collectionbuilder-sample-data/master/psychiana_cbdemo_gh.csv"
 metadata-csv: https://docs.google.com/spreadsheets/d/e/2PACX-1vQBf-Kju6JGQkO1ibauCi6tWo3EJuPuPwLELw5o7L7sX-Mr8ZRonQAFbGA4xgOMwOU15KlO3Nh73pC5/pub?gid=1778110557&single=true&output=csv
 # objects folder where PDFs are stored and retrieved from
-objects: https://drive.google.com/drive/folders/1LX8veDATo-PMEnf70pMD4N1XWPpur7X-?usp=sharing
+objects: https://drive.google.com/drive/folders/1EN5qJRYQVYhqQqAx5Dufjk7wtPut6aTb?usp=sharing
 
 ##########
 # Site/Organization Branding 
