@@ -38,6 +38,8 @@ if (sessionStorage.getItem("cb_items_store")) {
   document.querySelector("main").prepend(metadataAlert);
 }
 
+/* where is this 'refresh' button??? not creating a div */
+
 {% if site.development-refresh == true %}
 if (sessionStorage.getItem("cb_metadata_set")) { 
   var refreshButton = document.createElement("div");
